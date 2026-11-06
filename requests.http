@@ -1,0 +1,22 @@
+@host = http://localhost:5080
+
+### Добавить уязвимость
+POST {{host}}/api/vulnerabilities
+Content-Type: application/json
+
+{ "name": "SQL injection in login form", "severity": "Critical" }
+
+### Получить уязвимость
+GET {{host}}/api/vulnerabilities/{{id}}
+
+### Запустить сканирование
+POST {{host}}/api/scans
+Content-Type: application/json
+
+{ "repositoryUrl": "https://gitlab.com/group/project" }
+
+### Статус сканирования
+GET {{host}}/api/scans/{{scanId}}
+
+### Отменить сканирование
+POST {{host}}/api/scans/{{scanId}}/cancel
