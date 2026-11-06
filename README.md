@@ -1,7 +1,7 @@
 # Vulnerability Tracker API
 
 > Тестовое задание Developer C# — **КарповаВ.Г._Тестовое задание_DevC#**
-> Репозиторий: `<ссылка на GitHub>`
+> Репозиторий: `https://github.com/exewer/-.-._-_DevC-./edit/master/README.md`
 
 REST API на ASP.NET Core (.NET 8, minimal API) для учёта уязвимостей и запуска фоновых задач сканирования кода.
 
